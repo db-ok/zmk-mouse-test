@@ -52,7 +52,7 @@
     default_layer {
       display-name = "Default";
       bindings = <
-        &ltm BLTH MB4 &ltm DEVICE MB5 &mkp MCLK &lth SCRLM RCLK
+        &ltm BLTH MB4 &ltm DEVICE MB5 &mkp MCLK &mkp RCLK
         &mkp LCLK                               &mto SCRLM SNIPE
       >;
     };
@@ -87,8 +87,8 @@
     snipe_layer {
       display-name = "Snipe";
       bindings = <
-        &trans &trans &trans &lth SCRLM RCLK
-        &trans               &to DEFAULT
+        &trans &trans &trans &trans
+        &trans               &mto SCRLM DEFAULT
       >;
     };
   };
